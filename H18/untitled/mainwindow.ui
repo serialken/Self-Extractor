@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1128</width>
+    <height>424</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>H18 SelfExtractor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imgs.qrc">
+    <normaloff>:/common/imgs/common/imgs/9327.jpg</normaloff>:/common/imgs/common/imgs/9327.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>1081</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <widget class="QLabel" name="Id_Sample">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>8</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sample No:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_Year">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>38</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_Hour">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>68</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Time:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_Sample">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>8</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_Date">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>38</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_Time">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>68</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_WBC_bubble">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>40</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>WBC bubble:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_WBC_clog">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>70</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>WBC clog:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_RBC_bubble">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>100</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RBC bubble:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_LOW">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>10</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Low temperature:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_RBC_clog">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>130</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RBC clog:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_GRAN_2">
+     <property name="geometry">
+      <rect>
+       <x>273</x>
+       <y>186</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_MID">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>156</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MON#:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_RDW_SD">
+     <property name="geometry">
+      <rect>
+       <x>453</x>
+       <y>187</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_MID_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>66</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MON%:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_MPV">
+     <property name="geometry">
+      <rect>
+       <x>583</x>
+       <y>38</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MPV:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_RDW_SD">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>188</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RDW-SD:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_RDW_CV">
+     <property name="geometry">
+      <rect>
+       <x>453</x>
+       <y>217</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_MCV">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>98</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MCV:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_PDW">
+     <property name="geometry">
+      <rect>
+       <x>633</x>
+       <y>68</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_MPV">
+     <property name="geometry">
+      <rect>
+       <x>633</x>
+       <y>38</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_MID_2">
+     <property name="geometry">
+      <rect>
+       <x>273</x>
+       <y>156</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_P_LCR">
+     <property name="geometry">
+      <rect>
+       <x>583</x>
+       <y>128</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P-LCR:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_PLT">
+     <property name="geometry">
+      <rect>
+       <x>583</x>
+       <y>8</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PLT:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_GRAN_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>186</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>GRAN#:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_HGB">
+     <property name="geometry">
+      <rect>
+       <x>453</x>
+       <y>37</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_PDW">
+     <property name="geometry">
+      <rect>
+       <x>583</x>
+       <y>68</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PDW:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_LYM_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>126</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>LYM#:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_LYM">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>36</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>LYM%:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_LYM_2">
+     <property name="geometry">
+      <rect>
+       <x>273</x>
+       <y>126</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_MCHC">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>158</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MCHC:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_HCT">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>68</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HCT:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_WBC">
+     <property name="geometry">
+      <rect>
+       <x>273</x>
+       <y>8</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_GRAN">
+     <property name="geometry">
+      <rect>
+       <x>273</x>
+       <y>96</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_MCV">
+     <property name="geometry">
+      <rect>
+       <x>453</x>
+       <y>97</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_PCT">
+     <property name="geometry">
+      <rect>
+       <x>583</x>
+       <y>98</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PCT:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_RDW_CV">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>218</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RDW-CV:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_MCHC">
+     <property name="geometry">
+      <rect>
+       <x>453</x>
+       <y>157</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_RBC">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>8</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RBC:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_MCH">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>128</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MCH:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_PCT">
+     <property name="geometry">
+      <rect>
+       <x>633</x>
+       <y>98</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_MID">
+     <property name="geometry">
+      <rect>
+       <x>273</x>
+       <y>66</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_HGB">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>38</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HGB:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_RBC">
+     <property name="geometry">
+      <rect>
+       <x>453</x>
+       <y>7</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_HCT">
+     <property name="geometry">
+      <rect>
+       <x>453</x>
+       <y>67</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_PLT">
+     <property name="geometry">
+      <rect>
+       <x>633</x>
+       <y>8</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_GRAN">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>96</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>GRAN%:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_MCH">
+     <property name="geometry">
+      <rect>
+       <x>453</x>
+       <y>127</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_LYM">
+     <property name="geometry">
+      <rect>
+       <x>273</x>
+       <y>36</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_WBC">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>8</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>WBC:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_P_LCR">
+     <property name="geometry">
+      <rect>
+       <x>633</x>
+       <y>128</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_R2">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>70</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>R2:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_R3">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>100</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>R3:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_R4">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>130</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>R4:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_R1">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>40</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>R1:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_RM">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>10</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RM:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Id_PM">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>160</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PM:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>30</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_3">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>62</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>93</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>123</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_6">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>152</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>182</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_8">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>4</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_9">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>32</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_10">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>62</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_11">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>92</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_12">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>122</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_13">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>152</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_14">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>182</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_15">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>212</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_16">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>4</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_17">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>32</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_18">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>62</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_19">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>92</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_20">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>122</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_21">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>4</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_22">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>34</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_23">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>64</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_24">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>94</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_25">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>124</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_26">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>3</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_27">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>33</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_28">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>63</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_29">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>93</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_30">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>123</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Alarm1_31">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>153</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Id_PORT_COM">
+    <property name="geometry">
+     <rect>
+      <x>31</x>
+      <y>20</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Port COM (exemple &quot;COM1&quot;):</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="L_PORT_COM">
+    <property name="geometry">
+     <rect>
+      <x>211</x>
+      <y>18</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GO">
+    <property name="geometry">
+     <rect>
+      <x>331</x>
+      <y>16</y>
+      <width>41</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GO</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>17</y>
+      <width>118</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_to_hide">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>589</y>
+      <width>120</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="L_Last_name">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>60</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SEX">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>122</y>
+       <width>53</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sex:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_First_name">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>92</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Patient_id">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>182</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Patient ID:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_Birth">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>152</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="COMMENTS">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>212</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Comments:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="L_Patient_id">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>182</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="L_Sex">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>122</y>
+       <width>73</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Homme</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Femme</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="LAST_NAME">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>62</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Last name:</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="L_Comm">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>212</y>
+       <width>201</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="FIRST_NAME">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>92</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>First name:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="BIRTHDATE">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>152</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Birthdate:</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1128</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

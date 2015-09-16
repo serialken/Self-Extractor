@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/common/imgs">
+        <file>common/imgs/black-disc-set-icone-8468-32.png</file>
+        <file>common/imgs/blue-folder-open-icone-8413-32.png</file>
+        <file>common/imgs/close-delete-exit-icone-8590-32.png</file>
+        <file>common/imgs/green-arrow-on-the-left-icone-7178-48.png</file>
+        <file>common/imgs/interrogation-point-icone-9574-32.png</file>
+        <file>common/imgs/onebit-icone-3921-32.png</file>
+        <file>common/imgs/onebit-icone-4713-32.png</file>
+        <file>common/imgs/onebit-icone-6248-32.png</file>
+        <file>common/imgs/onebit-icone-6954-48.png</file>
+        <file>common/imgs/onebit-icone-9483-32.png</file>
+        <file>common/imgs/verify-correct-icone-9268-32.png</file>
+        <file>common/imgs/9327.jpg</file>
+    </qresource>
+</RCC>
